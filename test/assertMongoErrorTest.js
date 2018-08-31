@@ -80,6 +80,23 @@ suite('assertMongoError', () => {
     done();
   });
 
+  test('throws new error if message is given', (done) => {
+    const origError = new Error('orig error');
+
+    origError.name = 'MongoError';
+    origError.code = 19;
+
+    try {
+      assertMongoError.assert(origError, 'Blöd gelaufen');
+      throw new Error('X');
+    } catch (err) {
+      assert.that(codeUpdateCalled).is.equalTo(0);
+      assert.that(err.message).is.equalTo('Blöd gelaufen');
+      assert.that(err.metadata.cause).is.equalTo({ code:19, message: 'orig error', metadata: {} });
+      done();
+    }
+  });
+
   test('calls update in code map', (done) => {
     const mockedAssertMongoError = require('../lib/assertMongoError');
 
