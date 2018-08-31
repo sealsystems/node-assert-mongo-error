@@ -3,9 +3,9 @@
 [![CircleCI](https://circleci.com/gh/sealsystems/node-assert-mongo-error.svg?style=svg)](https://circleci.com/gh/sealsystems/node-assert-mongo-error)
 [![AppVeyor](https://ci.appveyor.com/api/projects/status/knnocd1ddkfbaou0?svg=true)](https://ci.appveyor.com/project/Plossys/node-assert-mongo-error)
 
-If called with a mongodb error of a predefined (severe error) code it throws the error.
+If called with a mongodb error of a predefined (severe error) code it logs the error and exits the process.
 
-Default list of mongodb error codes to throw:
+Default list of severe mongodb error codes to exit:
 
 | Name | Code |
 |---|---|

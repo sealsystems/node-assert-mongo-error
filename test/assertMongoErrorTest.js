@@ -20,6 +20,7 @@ suite('assertMongoError', () => {
       map: { 18: true },
       update () {
         codeUpdateCalled++;
+
         return updateError;
       }
     });
@@ -47,16 +48,24 @@ suite('assertMongoError', () => {
     done();
   });
 
-  test('throws on severe mongo error', (done) => {
+  test('calls exit on severe mongo error', (done) => {
     const testError = new Error('test error');
 
     testError.name = 'MongoError';
     testError.code = 18;
-    assert.that(() => {
-      assertMongoError.assert(testError);
-    }).is.throwing('test error');
-    assert.that(codeUpdateCalled).is.equalTo(0);
-    done();
+
+    const origExit = process.exit;
+
+    process.exit = (code) => {
+      process.exit = origExit;
+      assert.that(code).is.equalTo(1);
+      assert.that(codeUpdateCalled).is.equalTo(0);
+      done();
+    };
+
+    assertMongoError.assert(testError);
+    process.exit = origExit;
+    throw new Error('X');
   });
 
   test('is not throwing an error if code is not in list', (done) => {
