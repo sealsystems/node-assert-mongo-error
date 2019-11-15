@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "@sealsystems/eslint-config-es": "1.1.1",
-    "assertthat": "1.0.0",
+    "assertthat": "5.0.1",
     "mockery": "2.1.0",
     "nyc": "14.1.1",
     "roboter": "0.16.0",
