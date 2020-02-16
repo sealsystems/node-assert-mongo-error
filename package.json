@@ -23,7 +23,7 @@
     "@sealsystems/log": "2.2.0"
   },
   "devDependencies": {
-    "@sealsystems/eslint-config-es": "1.1.1",
+    "@sealsystems/eslint-config-es": "3.6.1",
     "assertthat": "1.0.0",
     "mockery": "2.1.0",
     "nyc": "15.0.0",
