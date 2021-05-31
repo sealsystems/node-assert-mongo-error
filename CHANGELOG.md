@@ -1,3 +1,10 @@
+## 1.3.9 (2021-05-31)
+
+### Chores
+
+
+bump [@sealsystems](https://github.com/sealsystems)/log from 2.3.2 to 2.3.3 ([#135](https://github.com/sealsystems/node-assert-mongo-error/issues/135)) ([8603ed9](https://github.com/sealsystems/node-assert-mongo-error/commit/8603ed9))
+
 ## 1.3.8 (2021-03-26)
 
 ### Chores
