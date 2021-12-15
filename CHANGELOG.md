@@ -1,3 +1,16 @@
+## 2.0.0 (2021-12-15)
+
+### Features
+
+
+upgrade error module ([d895a5a](https://github.com/sealsystems/node-assert-mongo-error/commit/d895a5a))
+
+
+
+### BREAKING CHANGES
+
+Major-Upgrade of @sealsystems/error from 1. to 2.
+
 ## 1.3.9 (2021-05-31)
 
 ### Chores
