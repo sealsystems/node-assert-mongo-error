@@ -27,8 +27,8 @@
     "@sealsystems/log": "2.4.2"
   },
   "devDependencies": {
-    "@sealsystems/eslint-config-es": "3.7.1",
-    "@sealsystems/mocha": "4.2.0",
+    "@sealsystems/eslint-config-es": "3.7.6",
+    "@sealsystems/mocha": "4.2.3",
     "mockery": "2.1.0"
   },
   "repository": {
