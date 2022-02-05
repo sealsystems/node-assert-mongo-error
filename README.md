@@ -1,7 +1,5 @@
 # @sealsystems/assert-mongo-error
 
-[![CircleCI](https://circleci.com/gh/sealsystems/node-assert-mongo-error.svg?style=svg)](https://circleci.com/gh/sealsystems/node-assert-mongo-error)
-[![AppVeyor](https://ci.appveyor.com/api/projects/status/knnocd1ddkfbaou0?svg=true)](https://ci.appveyor.com/project/Plossys/node-assert-mongo-error)
 
 Test for a servere mongodb error and handle it by exiting the process, throwing a new generated `@sealsystems/error` error object or just ignore the error.
 
