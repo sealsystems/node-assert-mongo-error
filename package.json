@@ -23,7 +23,7 @@
   },
   "main": "lib/assertMongoError.js",
   "dependencies": {
-    "@sealsystems/error": "2.3.6",
+    "@sealsystems/error": "2.3.8",
     "@sealsystems/log": "2.4.2"
   },
   "devDependencies": {
