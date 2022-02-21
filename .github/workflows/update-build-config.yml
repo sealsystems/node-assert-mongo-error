@@ -2,7 +2,7 @@ name: update-build-config
 
 on:
   schedule:
-    - cron: "16 19 * * *"
+    - cron: "16 18 * * *"
   workflow_dispatch:
     # No inputs needed
 
