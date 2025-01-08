@@ -1,6 +1,6 @@
 {
   "name": "@sealsystems/assert-mongo-error",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Throws on a servere mongodb error.",
   "author": {
     "name": "SEAL Systems AG",
