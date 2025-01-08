@@ -115,7 +115,7 @@ suite('assertMongoError', () => {
       assert.that(err.message).is.equalTo('Blöd gelaufen');
       assert.that(err.metadata.cause.stack).is.ofType('string');
       delete err.metadata.cause.stack;
-      assert.that(err.metadata.cause).is.equalTo({ name: 'MongoError', message: 'orig error', code: 19 });
+      assert.that(err.metadata.cause).is.equalTo({ name: 'MongoError', message: 'orig error', code: 19, metadata: {} });
 
       return done();
     }
