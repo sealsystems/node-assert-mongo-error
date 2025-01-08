@@ -23,11 +23,11 @@
   },
   "main": "lib/assertMongoError.js",
   "dependencies": {
-    "@sealsystems/error": "2.3.6",
-    "@sealsystems/log": "2.4.2"
+    "@sealsystems/error": "2.4.0",
+    "@sealsystems/log": "2.5.0"
   },
   "devDependencies": {
-    "@sealsystems/eslint-config-es": "3.7.8",
+    "@sealsystems/eslint-config-es": "3.7.10",
     "@sealsystems/mocha": "4.2.3",
     "mockery": "2.1.0"
   },
