@@ -1,3 +1,10 @@
+## 2.0.2 (2025-02-03)
+
+### Bug Fixes
+
+
+updated deps ([9813a9e](https://github.com/sealsystems/node-assert-mongo-error/commit/9813a9e))
+
 ## 2.0.1 (2025-01-08)
 
 ### Bug Fixes
