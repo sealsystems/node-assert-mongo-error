@@ -24,7 +24,7 @@
   "main": "lib/assertMongoError.js",
   "dependencies": {
     "@sealsystems/error": "2.4.0",
-    "@sealsystems/log": "2.5.0"
+    "@sealsystems/log": "2.5.1"
   },
   "devDependencies": {
     "@sealsystems/eslint-config-es": "3.7.10",
